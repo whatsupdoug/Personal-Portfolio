@@ -19,7 +19,6 @@ import {
 	getGeneratedPageOgImage,
 	getPersonId,
 	getPersonStructuredData,
-	getSeoImage,
 	getSiteUrl,
 	getWebsiteId,
 	getWebsiteStructuredData,
@@ -67,7 +66,7 @@ export default function IndexPage({
 				fullTitle: `${siteConfig.name} | ${siteConfig.title}`,
 				description: pageDescription,
 				pathname: "/",
-				image: getSeoImage(hero.image, getGeneratedPageOgImage("home")),
+				image: getGeneratedPageOgImage("home"),
 				imageAlt: `${siteConfig.name} home page`,
 				structuredData: [
 					getWebsiteStructuredData(),
